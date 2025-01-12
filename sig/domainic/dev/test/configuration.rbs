@@ -1,0 +1,32 @@
+# Generated from lib/domainic/dev/test/configuration.rb with RBS::Inline
+
+module Domainic
+  module Dev
+    module Test
+      # Domainic RSpec configuration
+      #
+      # @author {https://aaronmallen.me Aaron Allen}
+      # @since 0.2.0
+      #
+      # @api private
+      #
+      # @note This module should be required and initialized in your test helper before your test suite runs
+      # @see https://relishapp.com/rspec/rspec-core/docs/configuration RSpec configuration documentation
+      # @see https://rubydoc.info/github/rspec/rspec-core/RSpec/Core/Configuration RSpec::Core::Configuration
+      module Configuration
+        # Configure RSpec with Domainic's default settings
+        #
+        # @author {https://aaronmallen.me Aaron Allen}
+        # @since 0.2.0
+        #
+        # @api private
+        #
+        # @yield [RSpec::Core::Configuration] the RSpec configuration
+        #
+        # @return [void]
+        # @rbs () ?{ (untyped) -> void } -> void
+        def self.default: () ?{ (untyped) -> void } -> void
+      end
+    end
+  end
+end

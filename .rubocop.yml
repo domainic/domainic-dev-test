@@ -1,0 +1,43 @@
+require:
+  - rubocop-on-rbs
+  - rubocop-ordered_methods
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-yard
+
+AllCops:
+  Exclude:
+    - vendor/**/*
+  NewCops: enable
+  TargetRubyVersion: 3.1
+
+Layout/LeadingCommentSpace:
+  AllowRBSInlineAnnotation: true
+
+Metrics/MethodLength:
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
+    - method_call
+
+Naming/FileName:
+  Exclude:
+    - '**/domainic-*'
+
+RBS:
+  Enabled: true
+
+RSpec/ExampleLength:
+  Max: 15
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
+
+RSpec/NestedGroups:
+  AllowedGroups:
+    - describe
+
+Style/Documentation:
+  AllowedConstants:
+    - Domainic

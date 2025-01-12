@@ -1,0 +1,9 @@
+lib/**/*.rb
+--title Domainic::Dev::Test
+--readme README.md
+--no-private
+--protected
+--markup markdown
+--markup-provider redcarpet
+--embed-mixins
+--files LICENSE

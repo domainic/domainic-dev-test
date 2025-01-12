@@ -1,0 +1,54 @@
+# Generated from lib/domainic/dev/test/coverage_reporter.rb with RBS::Inline
+
+module Domainic
+  module Dev
+    module Test
+      # Test coverage reporting with SimpleCov
+      #
+      # @author {https://aaronmallen.me Aaron Allen}
+      # @since 0.2.0
+      #
+      # @api public
+      #
+      # @note This module should be required and initialized in your test helper before any application code is loaded
+      # @see https://github.com/simplecov-ruby/simplecov SimpleCov documentation
+      # @see https://github.com/fortissimo1997/simplecov-lcov SimpleCov-LCOV documentation
+      module CoverageReporter
+        # Start the coverage reporting process with default configuration
+        #
+        # @author {https://aaronmallen.me Aaron Allen}
+        # @since 0.2.0
+        #
+        # @api public
+        #
+        # @example Basic usage
+        #   # Start coverage with default settings
+        #   Domainic::Spec::CoverageReporter.start
+        #
+        # @example With custom configuration
+        #   Domainic::Spec::CoverageReporter.start do
+        #     coverage_dir = 'coverage/my_suite'
+        #     minimum_coverage = 95
+        #   end
+        #
+        # @param profile [String, Symbol, nil] the SimpleCov profile to use
+        # @yield The SimpleCov::Configuration
+        #
+        # @return [void]
+        # @rbs (?(Symbol | String)? profile) ?{ (?) [self: untyped] -> void } -> void
+        def self.start: (?(Symbol | String)? profile) ?{ (?) [self: untyped] -> void } -> void
+
+        # Configure the default multi-formatter setup
+        #
+        # @author {https://aaronmallen.me Aaron Allen}
+        # @since 0.2.0
+        #
+        # @api private
+        #
+        # @return [SimpleCov::Formatter::MultiFormatter] the configured formatter
+        # @rbs () -> untyped
+        private def self.default_formatter: () -> untyped
+      end
+    end
+  end
+end
